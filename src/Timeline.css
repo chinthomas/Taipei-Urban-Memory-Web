@@ -1,0 +1,72 @@
+.timeline{
+  width: 80%;
+  margin: 2rem;
+  position: relative;
+}
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.container{
+  width: 50%;
+  position: relative;
+}
+.left-container{
+  left: 0%;
+}
+.right-container{
+  left: 50%;
+}
+
+.text-box{
+  color: black;
+  margin: 0.5rem 2rem;
+  padding: 0.2rem;
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+}
+
+.container svg{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background-color: #e6b413;
+  border-radius: 50%;
+  top: 10px;
+  z-index: 10;
+}
+.right-container svg{
+  left: -16px;
+}
+.left-container svg{
+  right: -16px;
+}
+
+.left-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  right: 20px;
+}
+
+.right-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  left: 20px;
+}

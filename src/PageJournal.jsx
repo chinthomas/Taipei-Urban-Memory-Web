@@ -1,9 +1,9 @@
+import Timeline from "./Timeline";
 function PageJournal(){
   return(
     <>
-      <body>
         <h1>Journal</h1>
-      </body>
+        <Timeline />
     </>
 
   );
