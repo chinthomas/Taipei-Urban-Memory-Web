@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "year": 1945,
+    "members": "graduator",
+    "description": "text",
+    "source": "data source"
+  },
+  {
+    "id": 2,
+    "year": 1946,
+    "members": "residents",
+    "description": "text",
+    "source": "data source"
+  },
+  {
+    "id": 3,
+    "year": 1947,
+    "members": "government",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cum nulla incidunt delectus natus nemo nisi ut, at dolor assumenda voluptatum minima necessitatibus suscipit similique, ullam neque? Reiciendis, totam obcaecati!",
+    "source": "data source"
+  }
+]
