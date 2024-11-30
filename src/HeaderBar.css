@@ -1,0 +1,18 @@
+.header-bar{
+  display: flex;
+  margin: 0rem;
+  padding: 1rem;
+  background-color: #242227;
+}
+
+.link-styles:hover{
+  background-color: #544f60;
+}
+
+.link-styles {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
