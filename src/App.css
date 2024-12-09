@@ -7,3 +7,35 @@
   justify-content: center;
   text-align: center;
 }
+
+.icon-legend{
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 1rem;
+  height: 2rem;
+}
+.icon-legend div{
+  background-color: white;
+  border-radius: 40%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.2rem;
+  margin-left: 0.8rem;
+}
+.icon-legend label{
+  text-align: center;
+  position: relative;
+  top: 0.2rem;
+  left: -0.4rem;
+}
+.icon-legend img{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+  background-color: #e6b413;
+  border-radius: 50%;
+  position: relative;
+  left: -0.3rem;
+  top: -0.3rem;
+}
