@@ -7,7 +7,7 @@ import PageMap from './PageMap.jsx'
 
 function App() {
   return (
-    <>
+    <div>
       <HeaderBar/>
       <Routes>
         <Route path='/' element={ <Page />}/>
@@ -15,7 +15,7 @@ function App() {
         <Route path='/Map' element={<PageMap />}/>
       </Routes>
 
-    </>
+    </div>
   )
 }
 
