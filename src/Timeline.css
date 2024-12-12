@@ -1,5 +1,4 @@
 .timeline{
-  width: 80%;
   margin: 2rem;
   position: relative;
 }
@@ -16,6 +15,7 @@
 .container{
   width: 50%;
   position: relative;
+  cursor: pointer;
 }
 .left-container{
   left: 0%;
@@ -25,27 +25,31 @@
 }
 
 .text-box{
-  color: black;
-  margin: 0.5rem 2rem;
-  padding: 0.2rem;
+  margin: 0.2rem 2rem;
+  padding: 0.5rem;
   background: #fff;
   position: relative;
   border-radius: 5px;
+  text-align: justify;
 }
 
-.container svg{
+.icon-box img{
   width: 2rem;
   height: 2rem;
   position: absolute;
   background-color: #e6b413;
   border-radius: 50%;
   top: 10px;
-  z-index: 10;
+  z-index: 3;
 }
-.right-container svg{
+.icon-box img:hover{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.right-container .icon-box img{
   left: -16px;
 }
-.left-container svg{
+.left-container .icon-box img{
   right: -16px;
 }
 

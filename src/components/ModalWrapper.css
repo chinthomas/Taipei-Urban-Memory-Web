@@ -1,0 +1,63 @@
+.journal-modal {
+  top: 5%;
+  left: 5%;
+  position: fixed;
+  z-index: 5;
+  height: 90%;
+  width: 90%;
+  overflow: auto;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: #aaa;
+  border: 1px solid black;
+}
+
+.modal svg{
+  color: white;
+  position: relative;
+  top: -1.4rem;
+  right: 0.1rem;
+}
+.close-svg{
+  float: right;
+  height: 0;
+  width: 0;
+  position: relative;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 1.5rem solid transparent;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid white;
+  border-top: 1.5rem solid white;
+}
+
+.close-svg:hover{
+  border-right: 1.5rem solid #544f60;
+  border-top: 1.5rem solid #544f60;
+}
+
+.images{
+  height: 60%;
+}
+
+.images img {
+  vertical-align: middle;
+}
+.text-container{
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  height: 40%;
+}
+.year{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.description{
+  text-align: justify;
+  padding: 1rem;
+}
+.source{
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 0.8rem;
+}
