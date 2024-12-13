@@ -48,12 +48,16 @@
 }
 .text-block{
   position: relative;
-  margin-top: 2rem;
-  margin-bottom: 35rem;
+  margin-top: 5rem;
+  margin-bottom: 32rem;
+  padding: 0.5rem;
   width: 30%;
-  height: 10rem;
+  height: 12rem;
   left: 65%;
   background-color: rgba(255, 255, 255, 0.75);
+}
+.text-block p{
+  text-align: justify;
 }
 
 .figure-box img{
