@@ -1,11 +1,46 @@
+import { useRef, useEffect, useState } from "react";
+import mapElements from "./data/mapElements.json"
+
 function PageMap(){
+  const myRefs = useRef([]);
+  const [visibleElement, setVisibleElement] = useState(0);
+
+  const onScroll = (el) => {
+    const styles = myRefs.current
+      .map((myRef, index) => {
+        const rect = myRef.getBoundingClientRect();
+
+        return {myRef, rect, index}
+      })
+      .find((group) => group.rect.bottom >= window.innerHeight * 0.1);
+    setVisibleElement(styles.index)
+  }
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+    })
+
+    window.addEventListener("scroll", onScroll);
+
+  }, [])
+
   return(
-    <>
-      <h1>Map</h1>
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d903.9233273964045!2d121.53257950282261!3d25.010535171515027!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1733041764900!5m2!1szh-TW!2stw" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    <div className="block-container">
+      <div className="figure-box">
+        <img src={`./map/${visibleElement+1}.png`} alt="" />
       </div>
-    </>
+      {
+        mapElements.map((element, i) => {
+          return (
+            <div key={i} className="text-block" 
+            ref={(el) => (myRefs.current[i] = el)}>
+              <h3>{element.title}</h3>
+              <p>{element.description}</p>
+            </div>
+          )
+        })
+      }
+    </div>
 
   );
 }

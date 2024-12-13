@@ -1,4 +1,5 @@
 .header-bar{
+  z-index: 2;
   display: flex;
   margin: 0rem;
   padding: 1rem;
