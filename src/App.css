@@ -71,3 +71,18 @@
   background-position: center;
 
 }
+
+.design-page{
+  position: relative;
+  z-index: -1;
+  margin-top: 0;
+  left: 0;
+  top: 0rem;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
