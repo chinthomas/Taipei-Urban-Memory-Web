@@ -32,6 +32,10 @@
   border-radius: 5px;
   text-align: justify;
 }
+.text-box img{
+  width: 90%;
+  left: 10%;
+}
 
 .icon-box img{
   width: 2rem;
@@ -74,3 +78,4 @@
   border-right: 15px solid #fff;
   left: 20px;
 }
+

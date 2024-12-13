@@ -38,6 +38,7 @@ function Timeline(){
     <div className='timeline'>
       {
         timelinelist.map((element) => {
+          console.log(element.image)
           return (
             <div className={`container ${(element.id%2)?'left-container':'right-container'}`} key={element.id} onClick={() => {
               setList(    
@@ -51,7 +52,9 @@ function Timeline(){
               <div className="text-box">
                 <div>{element.year}</div>
                 <div>{element.description}</div>
-                <div><img src='/a.jpg' alt="waiting..." /></div>
+                <div>
+                  <img src={`image/${element.image}`} alt="waiting..." />
+                </div>
               </div>
               <div className="icon-box">
                 {chooseIcon(element.members)}
@@ -67,7 +70,7 @@ function Timeline(){
       year={list.year}
       description={list.description}
       source={list.source}
-      images='/a.jpg'
+      images={`image/${list.image}`}
       onCloseRequest={()=>{setIsOpen(false)}}
     />
   </>

@@ -22,6 +22,7 @@ def make_json(csvFilePath, jsonFilePath):
             element["year"] = rows["年代與日期"]
             element["members"] = rows["跟什麼有關"]
             element["description"] = rows["事件"]
+            element["image"] = rows["Image"]
             element["source"] = rows["資料來源（哪一段、哪一頁）"]
             id = id + 1
             data.append(element)
